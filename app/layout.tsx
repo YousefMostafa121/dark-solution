@@ -1,40 +1,39 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import localFont from 'next/font/local'
+import localFont from "next/font/local";
 
 const inter = Inter({ subsets: ["latin"] });
 const metropolis = localFont({
   src: [
     {
-      path: '../public/fonts/Metropolis-Regular.ttf',
-      weight: '300',
-      style: 'normal'
+      path: "../public/fonts/Metropolis-Regular.ttf",
+      weight: "300",
+      style: "normal",
     },
     {
-      path: '../public/fonts/Metropolis-Regular.ttf',
-      weight: '400',
-      style: 'normal'
+      path: "../public/fonts/Metropolis-Regular.ttf",
+      weight: "400",
+      style: "normal",
     },
     {
-      path: '../public/fonts/Metropolis-Medium.ttf',
-      weight: '500',
-      style: 'normal'
+      path: "../public/fonts/Metropolis-Medium.ttf",
+      weight: "500",
+      style: "normal",
     },
     {
-      path: '../public/fonts/Metropolis-SemiBold.ttf',
-      weight: '600',
-      style: 'normal'
+      path: "../public/fonts/Metropolis-SemiBold.ttf",
+      weight: "600",
+      style: "normal",
     },
     {
-      path: '../public/fonts/Metropolis-Bold.ttf',
-      weight: '700',
-      style: 'normal'
+      path: "../public/fonts/Metropolis-Bold.ttf",
+      weight: "700",
+      style: "normal",
     },
-  ]
-  ,
-  variable: '--font-metropolis',
-})
+  ],
+  variable: "--font-metropolis",
+});
 
 export const metadata: Metadata = {
   title: "Dark Solution",
@@ -48,6 +47,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="shortcut icon" href="/images/fav.svg" />
+        <link rel="apple-touch-icon" href="/images/fav.svg" />
+        <link rel="mask-icon" href="/images/fav.svg" />
+      </head>
       <body className={` ${metropolis.className} `}>{children}</body>
     </html>
   );

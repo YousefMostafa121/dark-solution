@@ -12,8 +12,9 @@ const Index = () => {
             Our Spaces
           </p>
         </div>
-        <p className=" text-96 text-white font-[700] uppercase text-right max-w-[1024px]">the biggest Franchising 
-Egyptian stores </p>
+        <p className=" text-96 text-white font-[700] uppercase text-right max-w-[1024px]">
+          the biggest Franchising Egyptian stores{" "}
+        </p>
       </div>
     </div>
   );

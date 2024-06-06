@@ -12,7 +12,7 @@ const Index = () => {
             Our Spaces
           </p>
         </div>
-        <p className=" text-[48px] lg:text-[52px] xl:text-[64px] 2xl:text-[96px] text-white font-[700] uppercase lg:max-w-[630px]  max-w-[790px] text-center lg:text-right leading-[56px] xl:leading-[80px] 2xl:leading-[100px] ">
+        <p className=" text-[48px] lg:text-[52px] xl:text-[64px] 2xl:text-[96px] text-white font-[700] uppercase lg:max-w-[630px]  max-w-[790px] 2xl:max-w-[1025px] text-center lg:text-right leading-[56px] xl:leading-[80px] 2xl:leading-[100px] ">
           the biggest Franchising Egyptian stores{" "}
         </p>
       </div>

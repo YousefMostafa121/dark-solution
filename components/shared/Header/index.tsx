@@ -25,12 +25,15 @@ const Index = () => {
           <p className=" text-18 text-white font-[700] uppercase">Menu</p>
         </div>
         <div></div>
-        <Image
-          src={darkSolutionW}
-          alt="darkSolution"
-          priority
-          className=" absolute right-5 md:left-1/2 md:-translate-x-1/2 top-5"
-        />
+        <Link href={"/"}>
+          <Image
+            src={darkSolutionW}
+            alt="darkSolution"
+            priority
+            className=" absolute right-5 md:left-1/2 md:-translate-x-1/2 top-5"
+          />
+        </Link>
+
         <div className="hidden md:flex items-center gap-7">
           <Image src={cart} alt="cart" />
           <div className=" flex items-center gap-3">
@@ -54,7 +57,10 @@ const Index = () => {
             <Image src={close} alt="menu" />
             <p className=" text-18 text-white font-[700] uppercase">close</p>
           </div>
-          <Image src={darkSolutionW} alt="darkSolution" priority />
+          <Link href={"/"}>
+            <Image src={darkSolutionW} alt="darkSolution" priority />
+          </Link>
+
           <div className="hidden md:flex items-center gap-7">
             <Image src={cart} alt="cart" />
             <div className="flex items-center gap-3">
@@ -94,7 +100,7 @@ const Index = () => {
           <ul className=" text-end">
             <li className=" -mb-6">
               <Link
-                href={"#"}
+                href={"/"}
                 className=" text-64 font-[600] uppercase strokeHeader"
               >
                 Home
@@ -102,7 +108,7 @@ const Index = () => {
             </li>
             <li className=" -mb-6">
               <Link
-                href={"#"}
+                href={"/menu"}
                 className=" text-64 font-[600] uppercase strokeHeader"
               >
                 Menu

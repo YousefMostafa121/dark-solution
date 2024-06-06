@@ -91,7 +91,7 @@
     @apply text-[48px] xl:text-[64px];
   }
   .text-96 {
-    @apply text-[58px] xl:text-[96px] leading-[100px];
+    @apply text-[58px] xl:text-[96px] leading-[70px] xl:leading-[100px];
   }
 }
 @layer base {

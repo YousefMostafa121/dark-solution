@@ -13,8 +13,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      {/* <Header/> */}
-      {/* <HeroSection /> */}
+      <Header/>
+      <HeroSection />
       {/* <HowItStart/> */}
       {/* <Animation2/> */}
       {/* <Animation3/> */}

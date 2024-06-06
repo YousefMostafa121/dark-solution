@@ -18,7 +18,7 @@ const Index = () => {
     <header className=" absolute top-0 left-0 w-full z-50">
       <div className=" container py-5 flex items-center justify-between gap-5">
         <div
-          className=" fixed w-[121px] h-[44px] flex items-center justify-center gap-3 bg-[#1D1D1B] rounded-[10px] cursor-pointer top-5 md:top-3"
+          className=" fixed w-[121px] h-[44px] flex items-center justify-center gap-3 bg-[#1D1D1B] rounded-[10px] cursor-pointer mt-10 md:mt-0"
           onClick={handleChange}
         >
           <Image src={menu} alt="menu" />

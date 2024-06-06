@@ -15,10 +15,10 @@ export default function Home() {
     <div>
       <Header/>
       <HeroSection />
-      {/* <HowItStart/> */}
-      {/* <Animation2/> */}
-      {/* <Animation3/> */}
-      {/* <Animation4/> */}
+      <HowItStart/>
+      <Animation2/>
+      <Animation3/>
+      <Animation4/>
       <Biggest/>
       <Products/>
       <Footer />

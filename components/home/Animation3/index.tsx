@@ -34,7 +34,7 @@ const Index = () => {
         <Image
           src={bondok1}
           alt="grabe"
-          className=" absolute left-[20%] top-40"
+          className="hidden md:block absolute left-[20%] top-40"
         />
       </motion.div>
       {/* <motion.div
@@ -48,7 +48,7 @@ const Index = () => {
         <Image
           src={bondok2}
           alt="grabe"
-          className=" absolute right-[20%] bottom-60"
+          className="hidden md:block absolute right-[20%] bottom-60"
         />
       {/* </motion.div> */}
       <motion.div
@@ -62,7 +62,7 @@ const Index = () => {
         <Image
           src={bondok3}
           alt="grabe"
-          className=" absolute right-[20%] top-20"
+          className="hidden md:block absolute right-[20%] top-20"
         />
       </motion.div>
       {/* <motion.div
@@ -78,7 +78,7 @@ const Index = () => {
         <Image
           src={bondok4}
           alt="grabe"
-          className=" absolute left-[22%] bottom-40"
+          className="hidden md:block absolute left-[22%] bottom-40"
         />
       {/* </motion.div> */}
       <motion.div

@@ -14,7 +14,7 @@ import Link from "next/link";
 
 const Index = () => {
   return (
-    <div className=" w-full min-h-screen relative py-[100px] ">
+    <div className=" w-full  relative py-[100px] ">
       <Image
         src={productsBack}
         alt="productsBack"
@@ -24,7 +24,7 @@ const Index = () => {
         priority
       />
       <div className=" container">
-        <p className="text-64 strokeText font-[600] uppercase ml-[7.5rem] text-center">
+        <p className="text-64 strokeText font-[600] uppercase lg:ml-[7.5rem] text-center">
           Products
         </p>
         <p className=" text-96 text-white font-[700] uppercase -mt-12 mb-10 text-center">

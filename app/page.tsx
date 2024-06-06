@@ -13,14 +13,14 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <Header/>
-      <HeroSection />
-      <HowItStart/>
-      <Animation2/>
-      <Animation3/>
-      <Animation4/>
-      <Biggest/>
-      <Products/>
+      {/* <Header/> */}
+      {/* <HeroSection /> */}
+      {/* <HowItStart/> */}
+      {/* <Animation2/> */}
+      {/* <Animation3/> */}
+      {/* <Animation4/> */}
+      {/* <Biggest/> */}
+      {/* <Products/> */}
       <Footer />
     </div>
   );

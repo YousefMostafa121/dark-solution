@@ -11,20 +11,20 @@ const Index = () => {
     <footer className=" container pt-[100px] pb-[30px]">
       <div className=" flex flex-col items-center gap-[64px] ">
         <Image src={darkSolution} alt="darkSolution" />
-        <div className=" flex items-center justify-between gap-10  w-full">
-          <div>
+        <div className=" flex flex-col lg:flex-row items-center justify-between gap-10  w-full">
+          <div className=" w-full lg:w-fit">
             <p className=" text-16 text-black font-[500] mb-4">
               Subscribe to our newsletter
             </p>
-            <form className=" flex items-center gap-3">
+            <form className=" flex flex-col lg:flex-row items-center gap-3 ">
               <input
                 type="email"
-                className=" bg-[#E8E8E8] h-[64px] px-[32px] outline-none rounded-[10px] placeholder:text-[#979796] placeholder:text-16 lg:min-w-[395px]"
+                className=" bg-[#E8E8E8] h-[64px] px-[32px] outline-none rounded-[10px] placeholder:text-[#979796] placeholder:text-16 w-full lg:max-w-[220px] xl:min-w-[395px] "
                 placeholder="Email.."
               />
               <button
                 type="submit"
-                className="  h-[64px] flex items-center justify-center gap-3 text-18 text-white bg-[#1D1D1B] rounded-[10px] px-[32px]  w-fit lg:min-w-[203px]"
+                className="  h-[64px] flex items-center justify-center gap-3 text-18 text-white bg-[#1D1D1B] rounded-[10px] px-[32px] w-full  lg:w-fit xl:min-w-[203px] "
               >
                 <Image src={subscribe} alt="subscribe" />
                 Subscribe
@@ -149,7 +149,7 @@ const Index = () => {
             </ul>
           </div>
         </div>
-        <div className="w-full flex items-center justify-between">
+        <div className="w-full flex flex-col md:flex-row md:items-center justify-between gap-3">
           <p className=" text-12 text-[#1D1D1B]">
             All rights reserved by Dark Solution
           </p>

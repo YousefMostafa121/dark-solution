@@ -18,15 +18,20 @@ const Index = () => {
     <header className=" absolute top-0 left-0 w-full z-50">
       <div className=" container py-5 flex items-center justify-between gap-5">
         <div
-          className=" fixed w-[121px] h-[44px] flex items-center justify-center gap-3 bg-[#1D1D1B] rounded-[10px] cursor-pointer"
+          className=" fixed w-[121px] h-[44px] flex items-center justify-center gap-3 bg-[#1D1D1B] rounded-[10px] cursor-pointer top-5 md:top-3"
           onClick={handleChange}
         >
           <Image src={menu} alt="menu" />
           <p className=" text-18 text-white font-[700] uppercase">Menu</p>
         </div>
         <div></div>
-        <Image src={darkSolutionW} alt="darkSolution" priority className=" absolute left-1/2 -translate-x-1/2 top-5" />
-        <div className=" flex items-center gap-7">
+        <Image
+          src={darkSolutionW}
+          alt="darkSolution"
+          priority
+          className=" absolute right-5 md:left-1/2 md:-translate-x-1/2 top-5"
+        />
+        <div className="hidden md:flex items-center gap-7">
           <Image src={cart} alt="cart" />
           <div className=" flex items-center gap-3">
             <p className=" text-18 text-white font-[700] uppercase underline">
@@ -50,9 +55,9 @@ const Index = () => {
             <p className=" text-18 text-white font-[700] uppercase">close</p>
           </div>
           <Image src={darkSolutionW} alt="darkSolution" priority />
-          <div className=" flex items-center gap-7">
+          <div className="hidden md:flex items-center gap-7">
             <Image src={cart} alt="cart" />
-            <div className=" flex items-center gap-3">
+            <div className="flex items-center gap-3">
               <p className=" text-18 text-white font-[700] uppercase underline">
                 Contact us
               </p>
@@ -60,8 +65,8 @@ const Index = () => {
             </div>
           </div>
         </div>
-        <div className="container flex justify-between">
-          <div className=" flex justify-between gap-5 self-end">
+        <div className="container flex flex-col-reverse md:flex-row gap-14 justify-between">
+          <div className=" flex justify-between gap-5 md:self-end">
             <div>
               <p className=" text-14 text-[#B5B5B5] font-[700] uppercase max-w-[150px] mb-5">
                 We’re waiting for your visits at:

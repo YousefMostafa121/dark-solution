@@ -19,7 +19,7 @@ export default function Home() {
       {/* <Animation2/> */}
       {/* <Animation3/> */}
       {/* <Animation4/> */}
-      {/* <Biggest/> */}
+      <Biggest/>
       <Products/>
       <Footer />
     </div>

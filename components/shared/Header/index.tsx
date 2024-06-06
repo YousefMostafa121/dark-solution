@@ -24,7 +24,8 @@ const Index = () => {
           <Image src={menu} alt="menu" />
           <p className=" text-18 text-white font-[700] uppercase">Menu</p>
         </div>
-        <Image src={darkSolutionW} alt="darkSolution" priority />
+        <div></div>
+        <Image src={darkSolutionW} alt="darkSolution" priority className=" absolute left-1/2 -translate-x-1/2 top-5" />
         <div className=" flex items-center gap-7">
           <Image src={cart} alt="cart" />
           <div className=" flex items-center gap-3">

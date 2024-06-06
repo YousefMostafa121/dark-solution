@@ -122,3 +122,20 @@
 .strokeHeader:hover {
   color: white;
 }
+
+
+@media screen and (min-width: 1536px) {
+  .container {
+    min-width: 1536px;
+  }
+}
+@media screen and (min-width: 1728px) {
+  .container {
+    min-width: 1728px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    max-width: 1728px;
+  }
+}

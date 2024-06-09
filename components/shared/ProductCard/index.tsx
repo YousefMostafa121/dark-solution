@@ -4,7 +4,7 @@ import cart from "@/public/images/cart.svg";
 import Image from "next/image";
 const Index = () => {
   return (
-    <div className=" bg-[#1D1D1B] hover:bg-white group transition-all duration-300 rounded-[20px] p-5">
+    <div className=" border border-[#B9B9B8] bg-[#1D1D1B] hover:bg-white group transition-all duration-300 rounded-[20px] p-5">
       <Image src={product} alt="product" className=" mb-5" />
       <div className=" flex flex-col gap-3">
         <p className=" text-24 text-white font-[500] group-hover:text-[#1D1D1B] transition-all duration-300">

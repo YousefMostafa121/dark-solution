@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Index = () => {
   return (
-    <div className=' bg-[url("/images/biggestBack.jpg")] bg-cover bg-no-repeat h-[600px]'>
+    <div className=' bg-[url("/images/biggestBack.jpg")] bg-cover bg-no-repeat h-[600px] overflow-hidden'>
       <div className=" container flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between w-full h-full gap-10 ">
         <div className=" h-[64px] flex items-center justify-center gap-3 w-fit py-3 px-7 border border-white rounded-[10px]">
           <Image src={pinW} alt="pinW" />

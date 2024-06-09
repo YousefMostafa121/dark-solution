@@ -87,6 +87,9 @@
   .text-40 {
     @apply text-[32px] xl:text-[40px] leading-[42px] xl:leading-[48px];
   }
+  .text-48 {
+    @apply text-[36px] xl:text-[48px];
+  }
   .text-64 {
     @apply text-[48px] xl:text-[64px];
   }
@@ -126,12 +129,12 @@
 
 @media screen and (min-width: 1536px) {
   .container {
-    min-width: 1536px;
+    min-width: 1506px;
   }
 }
 @media screen and (min-width: 1728px) {
   .container {
-    min-width: 1728px;
+    min-width: 1700px;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -139,3 +142,7 @@
     max-width: 1728px;
   }
 }
+
+/* *{
+  border: 1px solid red;  
+} */

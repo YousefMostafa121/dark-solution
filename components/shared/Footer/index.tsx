@@ -8,8 +8,9 @@ import Image from "next/image";
 import Link from "next/link";
 const Index = () => {
   return (
-    <footer className=" container pt-[100px] pb-[30px]">
-      <div className=" flex flex-col items-center gap-[64px] ">
+    <footer className="container pt-[100px] pb-[30px] ">
+
+      <div className="  flex flex-col items-center gap-[64px] ">
         <Image src={darkSolution} alt="darkSolution" />
         <div className=" flex flex-col lg:flex-row items-center justify-between gap-10  w-full">
           <div className=" w-full lg:w-fit">

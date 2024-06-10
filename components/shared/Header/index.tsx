@@ -116,7 +116,7 @@ const Index = () => {
             </li>
             <li className=" -mb-6">
               <Link
-                href={"#"}
+                href={"/shop"}
                 className=" text-64 font-[600] uppercase strokeHeader"
               >
                 Shop

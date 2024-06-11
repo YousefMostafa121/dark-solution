@@ -15,10 +15,10 @@ const Index = () => {
     setshowMenu(!showMenu);
   };
   return (
-    <header className=" absolute top-0 left-0 w-full z-50">
-      <div className=" container py-5 flex items-center justify-between gap-5">
-        <div
-          className=" fixed w-[121px] h-[44px] flex items-center justify-center gap-3 bg-[#1D1D1B] rounded-[10px] cursor-pointer mt-10 md:mt-0"
+    <header className=" absolute py-5 top-0 left-0 w-full z-50">
+      <div className=" container">
+        <div className="flex items-center justify-between gap-5">        <div
+          className=" fixed w-[121px] h-[44px] flex items-center justify-center gap-3 bg-[#1D1D1B] rounded-[10px] cursor-pointer mt-10 md:mt-4"
           onClick={handleChange}
         >
           <Image src={menu} alt="menu" />
@@ -34,7 +34,7 @@ const Index = () => {
           />
         </Link>
 
-        <div className="hidden md:flex items-center gap-7">
+        <div className="hidden md:flex items-center gap-7 mt-4">
           <Image src={cart} alt="cart" />
           <div className=" flex items-center gap-3">
             <p className=" text-18 text-[#0C0C0B] font-[700] uppercase underline">
@@ -42,9 +42,11 @@ const Index = () => {
             </p>
             <Image src={contactUs} alt="contactUs" />
           </div>
-        </div>
+        </div></div>
+
+        <span className=" bg-[#B9B9B8] w-[90%] h-[1px] block mx-auto mt-16 md:mt-10"></span>
       </div>
-      <span className=" bg-[#B9B9B8] w-[90%] h-[1px] block mx-auto mt-5"></span>
+
       <div
         className={` w-full min-h-screen fixed top-0 left-0 ${
           showMenu ? "translate-y-0" : "-translate-y-full"

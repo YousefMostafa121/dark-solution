@@ -33,11 +33,11 @@ const CartDetails = () => {
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
-      <div className=" flex gap-5">
+      <div className=" flex flex-col lg:flex-row gap-5">
         <div className=" flex flex-col gap-5 grow-[1]">
-          <div className=" flex gap-5 bg-[#F9F9F9] py-[20px] px-[24px] rounded-[20px]">
-            <Image src={product} alt="product" width={138} height={161} />
-            <div className=" flex flex-col gap-3 grow">
+        <div className=" flex flex-col md:flex-row gap-5 bg-[#F9F9F9] py-[20px] px-[24px] rounded-[20px]">
+            <Image src={product} alt="product" width={138} height={161} className=" mx-auto" />
+            <div className=" flex flex-col grow gap-3">
               <div className=" flex items-center gap-5 ml-auto">
                 <div className=" flex items-center gap-2 cursor-pointer">
                   <Image src={edit} alt="edit" />
@@ -56,12 +56,12 @@ const CartDetails = () => {
                   150 EGp{" "}
                 </p>
               </div>
-              <div className=" flex items-center gap-3">
+              <div className=" flex items-center flex-wrap gap-3">
                 <div>
                   <p className=" text-16 text-[#1D1D1B] font-[400] mb-1">
                     Size
                   </p>
-                  <p className=" text-16 text-[#E8E8E8] font-[500] bg-[#10100F] rounded-[10px] py-2 px-7">
+                  <p className=" text-16 text-[#E8E8E8] font-[500] bg-[#10100F] rounded-[10px] py-2 px-4 md:px-7">
                     1 Kelo
                   </p>
                 </div>
@@ -69,7 +69,7 @@ const CartDetails = () => {
                   <p className=" text-16 text-[#1D1D1B] font-[400] mb-1">
                     Grinding
                   </p>
-                  <p className=" text-16 text-[#E8E8E8] font-[500] bg-[#10100F] rounded-[10px] py-2 px-7">
+                  <p className=" text-16 text-[#E8E8E8] font-[500] bg-[#10100F] rounded-[10px] py-2 px-4 md:px-7">
                     Chemex
                   </p>
                 </div>
@@ -77,7 +77,7 @@ const CartDetails = () => {
                   <p className=" text-16 text-[#1D1D1B] font-[400] mb-1">
                     Quantity
                   </p>
-                  <div className=" min-w-[200px]  flex items-center justify-between   border border-[#1D1D1B] rounded-[15px]">
+                  <div className="min-w-[140px] md:min-w-[200px]  flex items-center justify-between   border border-[#1D1D1B] rounded-[15px]">
                     <div
                       className=" grow py-[8px] flex  items-center justify-center cursor-pointer "
                       onClick={() => {
@@ -121,9 +121,9 @@ const CartDetails = () => {
                 </div>
               </div>
             </div>
-          </div>{" "}
-          <div className=" flex gap-5 bg-[#F9F9F9] py-[20px] px-[24px] rounded-[20px]">
-            <Image src={product} alt="product" width={138} height={161} />
+          </div>
+          <div className=" flex flex-col md:flex-row gap-5 bg-[#F9F9F9] py-[20px] px-[24px] rounded-[20px]">
+            <Image src={product} alt="product" width={138} height={161} className=" mx-auto" />
             <div className=" flex flex-col grow gap-3">
               <div className=" flex items-center gap-5 ml-auto">
                 <div className=" flex items-center gap-2 cursor-pointer">
@@ -143,12 +143,12 @@ const CartDetails = () => {
                   150 EGp{" "}
                 </p>
               </div>
-              <div className=" flex items-center gap-3">
+              <div className=" flex items-center flex-wrap gap-3">
                 <div>
                   <p className=" text-16 text-[#1D1D1B] font-[400] mb-1">
                     Size
                   </p>
-                  <p className=" text-16 text-[#E8E8E8] font-[500] bg-[#10100F] rounded-[10px] py-2 px-7">
+                  <p className=" text-16 text-[#E8E8E8] font-[500] bg-[#10100F] rounded-[10px] py-2 px-4 md:px-7">
                     1 Kelo
                   </p>
                 </div>
@@ -156,7 +156,7 @@ const CartDetails = () => {
                   <p className=" text-16 text-[#1D1D1B] font-[400] mb-1">
                     Grinding
                   </p>
-                  <p className=" text-16 text-[#E8E8E8] font-[500] bg-[#10100F] rounded-[10px] py-2 px-7">
+                  <p className=" text-16 text-[#E8E8E8] font-[500] bg-[#10100F] rounded-[10px] py-2 px-4 md:px-7">
                     Chemex
                   </p>
                 </div>
@@ -164,7 +164,7 @@ const CartDetails = () => {
                   <p className=" text-16 text-[#1D1D1B] font-[400] mb-1">
                     Quantity
                   </p>
-                  <div className=" min-w-[200px]  flex items-center justify-between   border border-[#1D1D1B] rounded-[15px]">
+                  <div className="min-w-[140px] md:min-w-[200px]  flex items-center justify-between   border border-[#1D1D1B] rounded-[15px]">
                     <div
                       className=" grow py-[8px] flex  items-center justify-center cursor-pointer "
                       onClick={() => {

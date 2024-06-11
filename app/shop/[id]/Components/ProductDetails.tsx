@@ -46,7 +46,7 @@ const ProductDetails = () => {
       <p className=" text-40 font-[500] text-[#1D1D1B] text-center uppercase -mt-1">
         150 EGp{" "}
       </p>
-      <div className=" flex justify-between gap-5  mt-10">
+      <div className=" flex justify-between gap-5 flex-wrap xl:flex-nowrap  mt-10">
         <div>
           <p className=" text-18 text-[#1D1D1B] uppercase font-[700] mb-2">
             Description
@@ -60,8 +60,8 @@ const ProductDetails = () => {
             elit sem elementum pharetra.
           </p>
         </div>
-        <div className=" flex gap-5 items-center ">
-          <div className=" flex flex-col gap-5">
+        <div className=" flex flex-col md:flex-row gap-5 items-center ">
+          <div className=" flex flex-row flex-wrap md:flex-col gap-5">
             <Image src={product} alt="product" className=" w-[120px] h-[140px]"  />
             <Image src={product} alt="product" className=" w-[120px] h-[140px]"/>
             <Image src={product} alt="product"  className=" w-[120px] h-[140px]"/>

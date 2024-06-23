@@ -1,10 +1,13 @@
 "use client";
 import React, { useState } from "react";
 import cart from "@/public/images/cartB.svg";
+import cartW from "@/public/images/cart.svg";
 import menu from "@/public/images/menu.svg";
 import close from "@/public/images/close.svg";
 import contactUs from "@/public/images/contactUsB.svg";
-import darkSolutionW from "@/public/images/darkSolutionB.svg";
+import contactUsW from "@/public/images/contactUs.svg";
+import darkSolution from "@/public/images/darkSolutionB.svg";
+import darkSolutionW from "@/public/images/darkSolutionW.svg";
 import Image from "next/image";
 import pin from "@/public/images/pin.svg";
 import Link from "next/link";
@@ -17,32 +20,33 @@ const Index = () => {
   return (
     <header className=" absolute py-5 top-0 left-0 w-full z-50">
       <div className=" container">
-        <div className="flex items-center justify-between gap-5">        <div
-          className=" fixed w-[121px] h-[44px] flex items-center justify-center gap-3 bg-[#1D1D1B] rounded-[10px] cursor-pointer mt-10 md:mt-4"
-          onClick={handleChange}
-        >
-          <Image src={menu} alt="menu" />
-          <p className=" text-18 text-white font-[700] uppercase">Menu</p>
-        </div>
-        <div></div>
-        <Link href={"/"}>
-          <Image
-            src={darkSolutionW}
-            alt="darkSolution"
-            priority
-            className=" absolute right-5 md:left-1/2 md:-translate-x-1/2 top-5"
-          />
-        </Link>
-
-        <div className="hidden md:flex items-center gap-7 mt-4">
-          <Image src={cart} alt="cart" />
-          <div className=" flex items-center gap-3">
-            <p className=" text-18 text-[#0C0C0B] font-[700] uppercase underline">
-              Contact us
-            </p>
-            <Image src={contactUs} alt="contactUs" />
+        <div className="flex items-center justify-between gap-5">
+          <div
+            className=" fixed w-[121px] h-[44px] flex items-center justify-center gap-3 bg-[#1D1D1B] rounded-[10px] cursor-pointer mt-10 md:mt-4"
+            onClick={handleChange}
+          >
+            <Image src={menu} alt="menu" />
+            <p className=" text-18 text-white font-[700] uppercase">Menu</p>
           </div>
-        </div></div>
+          <div></div>
+          <Link href={"/"}>
+            <Image
+              src={darkSolution}
+              alt="darkSolution"
+              priority
+              className=" absolute right-5 md:left-1/2 md:-translate-x-1/2 top-5"
+            />
+          </Link>
+          <div className="hidden md:flex items-center gap-7 mt-4">
+            <Image src={cart} alt="cart" />
+            <div className=" flex items-center gap-3">
+              <p className=" text-18 text-[#0C0C0B] font-[700] uppercase underline">
+                Contact us
+              </p>
+              <Image src={contactUs} alt="contactUs" />
+            </div>
+          </div>
+        </div>
 
         <span className=" bg-[#B9B9B8] w-[90%] h-[1px] block mx-auto mt-16 md:mt-10"></span>
       </div>
@@ -65,12 +69,12 @@ const Index = () => {
           </Link>
 
           <div className="hidden md:flex items-center gap-7">
-            <Image src={cart} alt="cart" />
+            <Image src={cartW} alt="cart" />
             <div className="flex items-center gap-3">
               <p className=" text-18 text-white font-[700] uppercase underline">
                 Contact us
               </p>
-              <Image src={contactUs} alt="contactUs" />
+              <Image src={contactUsW} alt="contactUs" />
             </div>
           </div>
         </div>

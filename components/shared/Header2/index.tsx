@@ -38,13 +38,15 @@ const Index = () => {
             />
           </Link>
           <div className="hidden md:flex items-center gap-7 mt-4">
-            <Image src={cart} alt="cart" />
-            <div className=" flex items-center gap-3">
+            <Link href={"/cart"}>
+              <Image src={cart} alt="cart" />
+            </Link>
+            <Link href={'/contactUs'} className=" flex items-center gap-3">
               <p className=" text-18 text-[#0C0C0B] font-[700] uppercase underline">
                 Contact us
               </p>
               <Image src={contactUs} alt="contactUs" />
-            </div>
+            </Link>
           </div>
         </div>
 
@@ -69,13 +71,15 @@ const Index = () => {
           </Link>
 
           <div className="hidden md:flex items-center gap-7">
-            <Image src={cartW} alt="cart" />
-            <div className="flex items-center gap-3">
+            <Link href={"/cart"}>
+              <Image src={cartW} alt="cart" />
+            </Link>
+            <Link href={"/contactUs"} className="flex items-center gap-3">
               <p className=" text-18 text-white font-[700] uppercase underline">
                 Contact us
               </p>
               <Image src={contactUsW} alt="contactUs" />
-            </div>
+            </Link>
           </div>
         </div>
         <div className="container flex flex-col-reverse md:flex-row gap-14 justify-between">
@@ -123,7 +127,7 @@ const Index = () => {
             </li>
             <li className=" -mb-6">
               <Link
-                href={"#"}
+                href={"/shop"}
                 className=" text-64 font-[600] uppercase strokeHeader"
               >
                 Shop
@@ -131,7 +135,7 @@ const Index = () => {
             </li>
             <li className=" -mb-6">
               <Link
-                href={"#"}
+                href={"/concept"}
                 className=" text-64 font-[600] uppercase strokeHeader"
               >
                 Concept
@@ -139,7 +143,7 @@ const Index = () => {
             </li>
             <li className=" -mb-6">
               <Link
-                href={"#"}
+                href={"/ourSpaces"}
                 className=" text-64 font-[600] uppercase strokeHeader"
               >
                 Our spaces
@@ -147,7 +151,7 @@ const Index = () => {
             </li>
             <li className=" -mb-6">
               <Link
-                href={"#"}
+                href={"/wholeSale"}
                 className=" text-64 font-[600] uppercase strokeHeader"
               >
                 Wholesale
@@ -155,7 +159,7 @@ const Index = () => {
             </li>
             <li className=" -mb-6">
               <Link
-                href={"#"}
+                href={"/careers"}
                 className=" text-64 font-[600] uppercase strokeHeader"
               >
                 Careers
@@ -163,7 +167,7 @@ const Index = () => {
             </li>
             <li className=" -mb-6">
               <Link
-                href={"#"}
+                href={"/franchise"}
                 className=" text-64 font-[600] uppercase strokeHeader"
               >
                 Franchise

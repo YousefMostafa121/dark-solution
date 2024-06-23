@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import heroHome from "@/public/images/homeHeroSection.jpg";
 import bottomArrow from "@/public/images/bottomArrow.svg";
+import Link from "next/link";
 const Index = () => {
   return (
     <div className=" w-full h-screen relative">
@@ -21,10 +22,10 @@ const Index = () => {
           Let’s make your day deliciously perfect!
         </p>
       </div>
-      <div className=" absolute bottom-5 left-1/2 -translate-x-1/2 w-fit flex flex-col items-center justify-center gap-2">
+      <Link href={'#howToStart'} className=" absolute bottom-5 left-1/2 -translate-x-1/2 w-fit flex flex-col items-center justify-center gap-2">
         <p className=" text-14 text-white">Scroll Down</p>
         <Image src={bottomArrow} alt="bottomArrow" />
-      </div>
+      </Link>
     </div>
   );
 };

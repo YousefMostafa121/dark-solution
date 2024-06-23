@@ -105,7 +105,9 @@
     @apply bg-white;
   }
 }
-
+*{
+  scroll-behavior: smooth;
+}
 .strokeText {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #ffffff4d;

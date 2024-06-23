@@ -8,7 +8,7 @@ const Index = () => {
   const { scrollY } = useViewportScroll();
   const imageY = useTransform(scrollY, [0, -1500], [0, 1500]);
   return (
-    <div className=" w-full h-[1850px] relative pt-[100px]">
+    <div id="howToStart" className=" w-full h-[1850px] relative pt-[100px]">
       <Image
         src={HowItWorks}
         alt="image"

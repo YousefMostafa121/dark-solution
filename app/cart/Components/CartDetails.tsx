@@ -13,6 +13,7 @@ import edit from "@/public/images/edit.svg";
 import remove from "@/public/images/remove.svg";
 import cart from "@/public/images/cart.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const CartDetails = () => {
   const [count, setcount] = useState(1);
@@ -254,12 +255,12 @@ const CartDetails = () => {
               290 EGP
             </p>
           </div>
-          <div className=" flex items-center gap-3 h-[64px] justify-center px-7 bg-[#1D1D1B] transition-all duration-300 rounded-[10px] cursor-pointer">
+          <Link href={'/checkout'} className=" flex items-center gap-3 h-[64px] justify-center px-7 bg-[#1D1D1B] transition-all duration-300 rounded-[10px] cursor-pointer">
             <Image src={cart} alt="cart" />
             <p className=" text-18 text-white font-[700] uppercase underline">
               Checkout
             </p>
-          </div>
+          </Link>
           <p className=" text-16 text-[#4A4A49] font-[500] text-center">
             Do you have a promo code? Enter here
           </p>

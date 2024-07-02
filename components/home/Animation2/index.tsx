@@ -3,11 +3,11 @@ import React from "react";
 import Image from "next/image";
 import imageBack from "@/public/images/animation2.png";
 import whiteBondok from "@/public/images/whiteBondok.png";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import { motion,  useTransform, useScroll } from "framer-motion";
 const Index = () => {
-  const { scrollY } = useViewportScroll();
+  const { scrollY } = useScroll();
   const imageY = useTransform(scrollY, [20, -500], [30, 500]);
-  console.log(imageY);
+  // console.log(imageY);
 
   return (
     <div className=" w-full h-[1050px] relative pt-[100px]">

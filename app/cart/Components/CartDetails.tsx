@@ -255,7 +255,7 @@ const CartDetails = () => {
               290 EGP
             </p>
           </div>
-          <Link href={'/checkout'} className=" flex items-center gap-3 h-[64px] justify-center px-7 bg-[#1D1D1B] transition-all duration-300 rounded-[10px] cursor-pointer">
+          <Link href={"/checkout"} className=" flex items-center gap-3 h-[64px] justify-center px-7 bg-[#1D1D1B] transition-all duration-300 rounded-[10px] cursor-pointer">
             <Image src={cart} alt="cart" />
             <p className=" text-18 text-white font-[700] uppercase underline">
               Checkout

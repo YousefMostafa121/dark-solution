@@ -3,9 +3,9 @@ import React from "react";
 import Image from "next/image";
 import HowItWorks from "@/public/images/howItStart.png";
 import grabe from "@/public/images/grabe.svg";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import { motion, useTransform, useScroll } from "framer-motion";
 const Index = () => {
-  const { scrollY } = useViewportScroll();
+  const { scrollY } = useScroll();
   const imageY = useTransform(scrollY, [0, -1500], [0, 1500]);
   return (
     <div id="howToStart" className=" w-full h-[1850px] relative pt-[100px]">

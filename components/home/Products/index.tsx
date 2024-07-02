@@ -48,7 +48,7 @@ const Index = () => {
           {/* <CarouselPrevious /> */}
           {/* <CarouselNext /> */}
         </Carousel>
-        <Link href={'#'} className=" h-[64px] flex items-center justify-center gap-3 w-fit py-3 px-7 border border-white rounded-[10px] mx-auto mt-10">
+        <Link href={'/shop'} className=" h-[64px] flex items-center justify-center gap-3 w-fit py-3 px-7 border border-white rounded-[10px] mx-auto mt-10">
           <Image src={cart} alt="pinW" />
           <p className=" text-18 text-white font-[700] uppercase underline">
           Shop All

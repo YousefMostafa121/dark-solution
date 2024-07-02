@@ -7,7 +7,7 @@ import cart from "@/public/images/cart.svg";
 
 const Products = () => {
   return (
-    <div className=" container py-[100px]">
+    <div className=" container py-[50px] xl:py-[100px]">
       <div className=" flex flex-col md:flex-row  gap-5 justify-between">
         <p className=" text-16  ttext-[#0C0C0B] font-[500]">
           Show : 9 Products
@@ -16,7 +16,7 @@ const Products = () => {
           <input
             type="text"
             placeholder="Search here.."
-            className=" py-[15px] px-[20px] border border-[#E8E8E8] bg-[#E8E8E8] rounded-[10px] w-[300px] outline-none h-[64px] flex items-center"
+            className=" py-[15px] px-[20px] border border-[#E8E8E8] bg-[#E8E8E8] rounded-[10px] w-full md:w-[300px] outline-none h-[64px] flex items-center"
           />
           <Image
             src={search}

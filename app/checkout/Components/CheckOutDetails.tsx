@@ -39,7 +39,7 @@ const CheckOutDetails = () => {
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
-      <div className=" grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div className=" grid grid-cols-1 lg:grid-cols-2 gap-5">
         <div className=" flex flex-col gap-5 ">
           {Array.from({ length: 2 }).map((_, i) => (
             <div key={i} className=" bg-[#F9F9F9] rounded-[20px] py-4 px-6">

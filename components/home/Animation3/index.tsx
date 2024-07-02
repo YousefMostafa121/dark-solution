@@ -7,11 +7,11 @@ import bondok1 from "@/public/images/bondok1.png";
 import bondok2 from "@/public/images/bondok2.png";
 import bondok3 from "@/public/images/bondok3.png";
 import bondok4 from "@/public/images/bondok4.png";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import { motion,  useTransform, useScroll } from "framer-motion";
 const Index = () => {
-  const { scrollY } = useViewportScroll();
+  const { scrollY } = useScroll();
   const imageY = useTransform(scrollY, [20, -500], [30, 500]);
-  console.log(imageY);
+  // console.log(imageY);
 
   return (
     <div className=" w-full h-[1050px] relative pt-[100px] ">

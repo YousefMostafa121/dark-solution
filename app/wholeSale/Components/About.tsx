@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className=" py-[50px] md:py-[100px] bg-[url(/images/flower.jpg)] bg-cover bg-no-repeat">
       <div className=" container">
-        <div className=" grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center mb-5 md:mb-40">
+        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-5 place-items-center mb-5 md:mb-40">
           <Image
             src={wholesale}
             alt="wholesale"
@@ -30,7 +30,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className=" grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center ">
+        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-5 place-items-center ">
           <div>
             <p className=" text-48 text-[#1D1D1B] font-[700] uppercase max-w-[505px] mb-5">
               Our Quality

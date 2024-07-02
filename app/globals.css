@@ -94,7 +94,7 @@
     @apply text-[48px] 2xl:text-[64px];
   }
   .text-96 {
-    @apply text-[58px] 2xl:text-[96px] leading-[70px] 2xl:leading-[100px];
+    @apply text-[56px] 2xl:text-[96px] leading-[70px] 2xl:leading-[100px];
   }
 }
 @layer base {
@@ -146,4 +146,17 @@
 
 /* *{
   border: 1px solid red;  
+} */
+
+/* body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
 } */

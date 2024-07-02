@@ -35,16 +35,14 @@ const Index = () => {
         </Link>
 
         <div className="hidden md:flex items-center gap-7">
-          <Link href={"/cart"}>
-            <Image src={cart} alt="cart" />
-          </Link>
-
-          <Link href={'/contactUs'} className=" flex items-center gap-3">
+          
+          <Image src={cart} alt="cart" />
+          <div className=" flex items-center gap-3">
             <p className=" text-18 text-white font-[700] uppercase underline">
               Contact us
             </p>
             <Image src={contactUs} alt="contactUs" />
-          </Link>
+          </div>
         </div>
       </div>
       <div
@@ -65,16 +63,13 @@ const Index = () => {
           </Link>
 
           <div className="hidden md:flex items-center gap-7">
-            <Link href={"/cart"}>
-              <Image src={cart} alt="cart" />
-            </Link>
-
-            <Link href={'/contactUs'} className="flex items-center gap-3">
+            <Image src={cart} alt="cart" />
+            <div className="flex items-center gap-3">
               <p className=" text-18 text-white font-[700] uppercase underline">
                 Contact us
               </p>
               <Image src={contactUs} alt="contactUs" />
-            </Link>
+            </div>
           </div>
         </div>
         <div className="container flex flex-col-reverse md:flex-row gap-14 justify-between">

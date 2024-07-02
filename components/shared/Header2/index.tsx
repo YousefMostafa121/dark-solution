@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import cart from "@/public/images/cartB.svg";
 import cartW from "@/public/images/cart.svg";
-import cartW from "@/public/images/cart.svg";
 import menu from "@/public/images/menu.svg";
 import close from "@/public/images/close.svg";
 import contactUs from "@/public/images/contactUsB.svg";
@@ -50,7 +49,6 @@ const Index = () => {
             </Link>
           </div>
         </div>
-        </div>
 
         <span className=" bg-[#B9B9B8] w-[90%] h-[1px] block mx-auto mt-16 md:mt-10"></span>
       </div>
@@ -69,7 +67,7 @@ const Index = () => {
             <p className=" text-18 text-white font-[700] uppercase">close</p>
           </div>
           <Link href={"/"}>
-            <Image src={darkSolutionWite} alt="darkSolution" priority />
+            <Image src={darkSolutionW} alt="darkSolution" priority />
           </Link>
 
           <div className="hidden md:flex items-center gap-7">
@@ -77,15 +75,9 @@ const Index = () => {
               <Image src={cartW} alt="cart" />
             </Link>
             <Link href={"/contactUs"} className="flex items-center gap-3">
-            <Link href={"/cart"}>
-              <Image src={cartW} alt="cart" />
-            </Link>
-            <Link href={"/contactUs"} className="flex items-center gap-3">
               <p className=" text-18 text-white font-[700] uppercase underline">
                 Contact us
               </p>
-              <Image src={contactUsW} alt="contactUs" />
-            </Link>
               <Image src={contactUsW} alt="contactUs" />
             </Link>
           </div>
@@ -136,7 +128,6 @@ const Index = () => {
             <li className=" -mb-6">
               <Link
                 href={"/shop"}
-                href={"/shop"}
                 className=" text-64 font-[600] uppercase strokeHeader"
               >
                 Shop
@@ -145,7 +136,6 @@ const Index = () => {
             <li className=" -mb-6">
               <Link
                 href={"/concept"}
-                href={"/concept"}
                 className=" text-64 font-[600] uppercase strokeHeader"
               >
                 Concept
@@ -153,7 +143,6 @@ const Index = () => {
             </li>
             <li className=" -mb-6">
               <Link
-                href={"/ourSpaces"}
                 href={"/ourSpaces"}
                 className=" text-64 font-[600] uppercase strokeHeader"
               >
@@ -171,7 +160,6 @@ const Index = () => {
             <li className=" -mb-6">
               <Link
                 href={"/careers"}
-                href={"/careers"}
                 className=" text-64 font-[600] uppercase strokeHeader"
               >
                 Careers
@@ -179,7 +167,6 @@ const Index = () => {
             </li>
             <li className=" -mb-6">
               <Link
-                href={"/franchise"}
                 href={"/franchise"}
                 className=" text-64 font-[600] uppercase strokeHeader"
               >

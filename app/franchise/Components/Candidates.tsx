@@ -2,11 +2,32 @@
 import React from "react";
 import productsBack from "@/public/images/ProductBack.jpg";
 import Image from "next/image";
-import { Field, Form, Formik } from "formik";
+import { ErrorMessage, Field, Form, Formik } from "formik";
 import upload from "@/public/images/upload.svg";
 import applyNow from "@/public/images/applyNow.svg";
+import { useAppDispatch } from "@/redux/store";
+import APP from "@/redux/APP";
+import * as Yup from 'yup';
+
+const validationSchema = Yup.object({
+  name: Yup.string()
+    .min(2, 'Name must be at least 2 characters')
+    .max(50, 'Name must be less than 50 characters')
+    .required('Name is required'),
+  phone: Yup.string()
+    .matches(/^[0-9]{11}$/, 'Phone number must be exactly 11 digits')
+    .required('Phone number is required'),
+  email: Yup.string()
+    .email('Invalid email address')
+    .required('Email is required'),
+  yearly_revenue: Yup.number()
+    .typeError('Yearly revenue must be a number')
+    .positive('Yearly revenue must be a positive number')
+    .required('Yearly revenue is required'),
+});
 
 const Candidates = () => {
+  const dispatch = useAppDispatch();
   return (
     <div className=" relative py-[50px] md:py-[100px]">
       <Image
@@ -28,9 +49,11 @@ const Candidates = () => {
         </div>
 
         <Formik
-          initialValues={{ name: "", address: "", mobile: "", revenue: "" }}
+          initialValues={{ name: "", email: "", phone: "", yearly_revenue: "" }}
+          validationSchema={validationSchema}
           onSubmit={(values) => {
             console.log(values, "values");
+            dispatch(APP.thunks.doApplyForFranchise(values));
           }}
         >
           {(props) => (
@@ -46,6 +69,7 @@ const Candidates = () => {
                     className=" w-full h-[64px] bg-[#E8E8E8] outline-none rounded-[10px] p-3 px-7"
                     placeholder="Name.."
                   />
+                  <ErrorMessage name="name" component="div" className="text-red-500" />
                 </div>
                 <div>
                   <p className=" text-20 text-white font-[700] uppercase mb-2">
@@ -57,6 +81,7 @@ const Candidates = () => {
                     className=" w-full h-[64px] bg-[#E8E8E8] outline-none rounded-[10px] p-3 px-7"
                     placeholder="Email "
                   />
+                  <ErrorMessage name="email" component="div" className="text-red-500" />
                 </div>
               </div>
               <div className=" my-5">
@@ -65,21 +90,23 @@ const Candidates = () => {
                 </p>
                 <Field
                   type="text"
-                  name="mobile"
+                  name="phone"
                   className=" w-full h-[64px] bg-[#E8E8E8] outline-none rounded-[10px] p-3 px-7"
                   placeholder="+02#######"
                 />
+                <ErrorMessage name="phone" component="div" className="text-red-500" />
               </div>
               <div>
                 <p className=" text-20 text-white font-[700] uppercase mb-2">
                   Yearly revenue
                 </p>
                 <Field
-                  type="text"
-                  name="revenue"
+                  type="number"
+                  name="yearly_revenue"
                   className=" w-full h-[64px] bg-[#E8E8E8] outline-none rounded-[10px] p-3 px-7"
                   placeholder="Revenue "
                 />
+                <ErrorMessage name="yearly_revenue" component="div" className="text-red-500" />
               </div>
               <button
                 type="submit"

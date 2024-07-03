@@ -1,7 +1,10 @@
+import ReduxProvider from "@/components/Providers/ReduxProvider";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter , } from "next/font/google";
 import localFont from "next/font/local";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const inter = Inter({ subsets: ["latin"] });
 const metropolis = localFont({
@@ -52,7 +55,12 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/images/fav.svg" />
         <link rel="mask-icon" href="/images/fav.svg" />
       </head>
-      <body className={` ${metropolis.className} `}>{children}</body>
+      <ReduxProvider>
+        <body className={` ${metropolis.className} `}>
+          {children}
+          <ToastContainer />
+        </body>
+      </ReduxProvider>
     </html>
   );
 }

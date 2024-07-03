@@ -2,9 +2,31 @@
 import React from "react";
 import Image from "next/image";
 import contactImage from "@/public/images/contactFormImage.jpg";
-import { Field, Form, Formik } from "formik";
+import { ErrorMessage, Field, Form, Formik } from "formik";
 import send from "@/public/images/send.svg";
+import { useAppDispatch } from "@/redux/store";
+import APP from "@/redux/APP";
+import * as Yup from 'yup';
+
+const validationSchema = Yup.object({
+  name: Yup.string()
+    .min(2, 'Name must be at least 2 characters')
+    .max(50, 'Name must be less than 50 characters')
+    .required('Name is required'),
+  phone: Yup.string()
+    .matches(/^[0-9]{11}$/, 'Phone number must be exactly 11 digits')
+    .required('Phone number is required'),
+  email: Yup.string()
+    .email('Invalid email address')
+    .required('Email is required'),
+  message: Yup.string()
+    .min(10, 'Message must be at least 10 characters')
+    .required('Message is required'),
+});
+
+
 const ContactForm = () => {
+  const dispatch = useAppDispatch();
   return (
     <div className=" relative w-full min-h-[800px] ">
       <Image
@@ -17,9 +39,11 @@ const ContactForm = () => {
       />
       <div className=" container  ">
         <Formik
-          initialValues={{ name: "", mobile: "", email: "", message: "" }}
+          initialValues={{ name: "", phone: "", email: "", message: "" }}
+          validationSchema={validationSchema}
           onSubmit={(values) => {
-            console.log(values, "values");
+            // console.log(values, "values");
+            dispatch(APP.thunks.doContactUs(values));
           }}
         >
           {(props) => (
@@ -42,6 +66,7 @@ const ContactForm = () => {
                     className=" w-full h-[64px] bg-[#E8E8E8] outline-none rounded-[10px] p-3 px-7"
                     placeholder="Name.."
                   />
+                  <ErrorMessage name="name" component="div" className="text-red-500" />
                 </div>
                 <div>
                   <p className=" text-20 text-[#1D1D1B] font-[700] uppercase mb-2">
@@ -49,10 +74,11 @@ const ContactForm = () => {
                   </p>
                   <Field
                     type="text"
-                    name="mobile"
+                    name="phone"
                     className=" w-full h-[64px] bg-[#E8E8E8] outline-none rounded-[10px] p-3 px-7"
                     placeholder="+02)"
                   />
+                  <ErrorMessage name="phone" component="div" className="text-red-500" />
                 </div>
               </div>
               <div className=" my-5">
@@ -65,6 +91,7 @@ const ContactForm = () => {
                   className=" w-full h-[64px] bg-[#E8E8E8] outline-none rounded-[10px] p-3 px-7"
                   placeholder="Email.."
                 />
+                <ErrorMessage name="email" component="div" className="text-red-500" />
               </div>
               <div className=" my-5">
                 <p className=" text-20 text-[#1D1D1B] font-[700] uppercase mb-2">
@@ -76,6 +103,7 @@ const ContactForm = () => {
                   className=" w-full min-h-[200px] bg-[#E8E8E8] outline-none rounded-[10px] p-3 px-7"
                   placeholder="Write here...."
                 />
+                <ErrorMessage name="message" component="div" className="text-red-500" />
               </div>
               <button
                 type="submit"
